@@ -1,0 +1,17 @@
+# Ignore Hugo build output
+/public/
+
+# OS and IDE cruft
+.DS_Store
+Thumbs.db
+
+# Node/Hugo tooling (if applicable)
+resources/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup or temp files
+*.swp
+*.swo
+*~
