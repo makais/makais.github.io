@@ -1,16 +1,17 @@
-# Digiplasty  
-### Makai Smith
+# Digiplasty Lab
 
-Welcome to Digiplasty — a platform for collaboration and exploration at the intersection of Architecture, Engineering, and Construction (AEC) technology, artificial intelligence, digital fabrication, and spatial computing.
+Independent inquiry and research at the intersection of the built environment and technology. 
 
-I’m Makai Smith, an architect, fabricator, and product strategist working across disciplines to prototype the future of design and construction. My current focus lies in:
+Domains of interest:
 
-- **AEC Software Innovation** — advancing the platforms that shape how we model, simulate, and build.
-- **AI/ML in Design Workflows** — exploring how machine learning can augment ideation, optimization, and execution.
-- **Computational and Generative Design** — investigating new forms of representation and agency in design.
-- **Digital Fabrication and Interfaces** — developing workflows to translate computational models into physical form.
-- **Spatial Computing** — integrating digital entities into real-world context through XR and geospatial data.
-  
-I'm open to collaborations, research, and conversation with individuals and teams pushing the boundaries of these domains.
+- **AEC Platform Innovation** — modeling, simulation, and coordination environments
+- **Computational & Generative Methods** — rethinking representation and design agency
+- **Digital Fabrication** — bridging models and material systems through design for manufacture
+- **Digital Twins and Reality Capture** — data-rich models with geophysical context for XR 
+- **Machine Learning in Design** — applications for ideation, optimization, and execution 
+- **Design Under Constraint** - adaptive practices for a constrained and interdependent world
 
-This space will evolve to reflect active projects, experiments, and ideas in progress.
+Open to collaborations, research, and conversation with individuals and teams pushing the boundaries of their domains.
+
+Makai Smith — M.Arch, MBA, fabricator, and product strategist.  
+[LinkedIn](https://www.linkedin.com/in/makai-smith/)
