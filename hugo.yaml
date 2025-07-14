@@ -1,0 +1,33 @@
+baseURL: "http://digiplasty.com"
+languageCode: "en-us"
+title: "digiplasty"
+theme: "PaperMod"
+
+params:
+  env: "production"
+  disableGoogleAnalytics: true
+  defaultTheme: dark
+  disableThemeToggle: true
+  disableAnchoredHeadings: true
+
+  ShowBreadCrumbs: true
+  cover.hiddenInSingle: true
+
+  ProfileMode:
+    enabled: true
+    title: Welcome to Digiplasty
+    subtitle: A space for research about architecture, software, and digital fabrication.
+    buttons:
+      - name: About
+        url: "/about"
+      - name: Research
+        url: "/research"
+      - name: Projects
+        url: "/projects"
+      - name: Notes
+        url: "/notes"
+
+
+publishDir: "public"
+
+

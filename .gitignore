@@ -1,5 +1,6 @@
 # Ignore Hugo build output
 /public/
+.hugo_build.lock
 
 # OS and IDE cruft
 .DS_Store
