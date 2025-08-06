@@ -16,3 +16,7 @@ yarn-error.log*
 *.swp
 *.swo
 *~
+
+# Add resources/_gen to fix missing cover images on deployed site
+!resources/_gen
+!resources/_gen/**

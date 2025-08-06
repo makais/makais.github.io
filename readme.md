@@ -75,3 +75,4 @@ If using a custom domain, ensure `public/CNAME` contains: "digiplasty.com" file
 To Check Live Site
 GitHub Pages URL: `https://<username>.github.io/<reponame>/` (if project page)
 Or: `https://digiplasty.com` if custom domain and DNS is set
+Run: `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.9:1313`
