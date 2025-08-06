@@ -18,7 +18,7 @@ params:
     enabled: true
     title: welcome to **digiplasty**
     subtitle: A space for research on architecture, software, and digital fabrication.
-    imageURL: static/images/digital-fabrication-icon-ef.png
+    imageURL: static/images/digital-fabrication-icon-ef2.png
     imageWidth: 324
     imageHeight: 203
     buttons: []
