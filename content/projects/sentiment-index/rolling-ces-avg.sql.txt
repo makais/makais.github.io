@@ -1,0 +1,139 @@
+-- Example SQL script from a Voice-of-the-Customer data pipeline.
+-- Demonstrates constructing a continuous date series, denormalizing survey responses, and computing rolling averages.
+
+DROP TABLE IF EXISTS #DateRange
+DROP TABLE IF EXISTS #CESSummary
+TRUNCATE TABLE SRC.CESAverages
+
+DECLARE @today DATE, @start DATE, @end DATE, @window INT;
+SET @window = -292 --days before today for rolling window
+SET @today = CAST(GETDATE() AS DATE);
+SET @start = DATEADD(DAY, @window, @today)
+SET @end = DATEADD(DAY, -1, @today) --yesterday
+--SELECT @today AS [today], @start AS [start], @end AS [end], @window AS [window]; 
+
+-- Generates an array of dates from @start to @end
+-- This is necessary so that the result set is continuous dates
+-- even where there is no survey data otherwise
+;WITH n AS 
+(
+  SELECT TOP (DATEDIFF(DAY, @start, @end) + 1) 
+    n = ROW_NUMBER() OVER (ORDER BY [object_id])
+  FROM sys.all_objects
+)
+SELECT DATEADD(DAY, n-1, @start) AS [Date]
+INTO #DateRange
+FROM n;
+
+-- Get a pivoted view of the CES data since it is denormalized in the source QualDL table
+;WITH CESView AS (SELECT
+	  QDL.responseId
+	, STRING_AGG(CASE WHEN QDL.questionId = 'QID45' THEN QDL.questionValue END, '~') AS CES_rating
+	, STRING_AGG(CASE WHEN QDL.questionId = 'QID45' THEN QDL.valueLabel END, '~') AS valueLabel
+	, STRING_AGG(CASE WHEN QDL.questionId = 'QID50_TEXT' THEN QDL.questionValue END, '~') AS text_response
+	, QDL.[statusLabel]
+	, QDL.[finishedLabel]
+	, QDL.[recipientFirstName]
+	, QDL.[recipientLastName]
+	, QDL.[recipientEmail]
+	, QDL.[startDate]
+	, QDL.[endDate]
+	, QDL.[status]
+	, QDL.[ipAddress]
+	, QDL.[progress]
+	, QDL.[duration]
+	, QDL.[finished]
+	, QDL.[recordedDate]
+	, CAST(recordedDate AS DATE) AS [Date]
+	, QDL.[_recordId]
+	, QDL.[locationLatitude]
+	, QDL.[locationLongitude]
+	, QDL.[distributionChannel]
+	, QDL.[userLanguage]
+	, QDL.[externalDataReference]
+	, QDL.[imsid]
+	, QDL.[ultimateId]
+	, QDL.[ultimateName]
+	, QDL.[totalArr]
+	, QDL.[eventCount]
+	, QDL.[source]
+	, QDL.[eventId]
+	, QDL.[description]
+	, QDL.[runId]
+	, QDL.[runTimestamp]
+	, QDL.[runDateRangeMin]
+	, QDL.[runDateRangeMax]
+	, QDL.[salesChannel]
+	, QDL.[renewalDate]
+	, QDL.[siteId]
+	, QDL.[category1]
+FROM [SRC].[QualDL] QDL
+GROUP BY 
+	  QDL.responseId
+	, QDL.[description]
+	, QDL.[statusLabel]
+	, QDL.[finishedLabel]
+	, QDL.[recipientFirstName]
+	, QDL.[recipientLastName]
+	, QDL.[recipientEmail]
+	, QDL.[startDate]
+	, QDL.[endDate]
+	, QDL.[status]
+	, QDL.[ipAddress]
+	, QDL.[progress]
+	, QDL.[duration]
+	, QDL.[finished]
+	, QDL.[recordedDate]
+	, QDL.[_recordId]
+	, QDL.[locationLatitude]
+	, QDL.[locationLongitude]
+	, QDL.[distributionChannel]
+	, QDL.[userLanguage]
+	, QDL.[externalDataReference]
+	, QDL.[imsid]
+	, QDL.[ultimateId]
+	, QDL.[ultimateName]
+	, QDL.[totalArr]
+	, QDL.[eventCount]
+	, QDL.[source]
+	, QDL.[eventId]
+	, QDL.[description]
+	, QDL.[runId]
+	, QDL.[runTimestamp]
+	, QDL.[runDateRangeMin]
+	, QDL.[runDateRangeMax]
+	, QDL.[salesChannel]
+	, QDL.[renewalDate]
+	, QDL.[siteId]
+	, QDL.[category1]
+)
+
+SELECT CES.[Date]
+	, SUM(CAST(CES_rating AS FLOAT)) sum_by_day
+	, COUNT(CAST(CES_rating AS  FLOAT)) count_by_day
+	, ROUND(SUM(CAST(CES_rating AS FLOAT)) / COUNT(CAST(CES_rating AS  FLOAT)), 2) AS daily_average
+INTO #CESSummary 
+FROM CESView CES
+GROUP BY CES.[Date]
+
+INSERT INTO SRC.CESAverages
+SELECT DRG.[Date]
+	--, sum_by_day
+	, count_by_day
+	--, ROUND(SUM(CVA.sum_by_day) OVER(ORDER BY DRG.[Date] ROWS UNBOUNDED PRECEDING) 
+	--	/ SUM(CVA.count_by_day) OVER(ORDER BY DRG.[Date] ROWS UNBOUNDED PRECEDING), 2) run_avg
+	, ROUND(SUM(CVA.sum_by_day) OVER(ORDER BY DRG.[Date] ROWS 30 PRECEDING) 
+		/ SUM(CVA.count_by_day) OVER(ORDER BY DRG.[Date] ROWS 30 PRECEDING), 2) trail_avg_30
+	, ROUND(SUM(CVA.sum_by_day) OVER(ORDER BY DRG.[Date] ROWS 360 PRECEDING) 
+		/ SUM(CVA.count_by_day) OVER(ORDER BY DRG.[Date] ROWS 360 PRECEDING), 2) trail_avg_360
+	, daily_average
+FROM #DateRange DRG
+LEFT JOIN #CESSummary CVA ON CVA.[Date] = DRG.[Date]
+GROUP BY DRG.[Date], CVA.sum_by_day, CVA.count_by_day, CVA.daily_average
+
+---- Count the records
+--SELECT SUM(count_by_day) AS numberOfResponses
+--	,MAX(count_by_day) AS maxDayCount
+--FROM #CESSummary 
+
+SELECT * FROM SRC.CESAverages

@@ -1,4 +1,4 @@
 ---
-title: "Digiplasty"
+title: "digiplasty"
 layout: "home"
 ---

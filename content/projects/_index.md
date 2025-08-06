@@ -1,5 +1,5 @@
 ---
 title: "Projects"
-description: "Architecture, software, and digital fabrication project projects that I've been a part of."
+description: "Some of the architecture, software, and digital fabrication projects to which I've contributed."
 layout: "section"
 ---

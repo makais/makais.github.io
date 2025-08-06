@@ -1,0 +1,53 @@
+/* Inspired by Everforest, created by Chat */
+
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(36, 40, 44);
+    /* Dark background */
+    --entry: rgb(49, 53, 57);
+    /* Slightly lighter for cards */
+    --primary: rgb(223, 218, 195);
+    /* Text color */
+    --secondary: rgb(145, 152, 144);
+    /* Subtext */
+    --tertiary: rgb(125, 133, 125);
+    /* Muted subtext */
+    --content: rgb(230, 224, 201);
+    /* Main content background */
+    --code-block-bg: rgb(44, 48, 52);
+    /* Code block background */
+    --code-bg: rgb(95, 101, 94);
+    /* Inline code background */
+    --border: rgb(82, 89, 83);
+    /* Border color */
+}
+
+.dark {
+    --theme: rgb(36, 40, 44);
+    --entry: rgb(49, 53, 57);
+    --primary: rgb(223, 218, 195);
+    --secondary: rgb(145, 152, 144);
+    --tertiary: rgb(125, 133, 125);
+    --content: rgb(230, 224, 201);
+    --code-block-bg: rgb(44, 48, 52);
+    --code-bg: rgb(95, 101, 94);
+    --border: rgb(82, 89, 83);
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.dark.list {
+    background: var(--theme);
+}
+
+.profile img {
+    border-radius: 0 !important;
+}

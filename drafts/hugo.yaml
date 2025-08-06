@@ -2,7 +2,7 @@ baseURL: "http://digiplasty.com"
 languageCode: "en-us"
 title: "digiplasty"
 theme: "PaperMod"
-copyright: © 2025 Makai Smith | digiplasty
+copyright: © 2025 O. M. Smith | digiplasty
 
 params:
   env: "production"
@@ -17,11 +17,14 @@ params:
   ProfileMode:
     enabled: true
     title: welcome to **digiplasty**
-    subtitle: A space for research on architecture, software, and digital fabrication.
-    imageURL: static/images/digital-fabrication-icon-ef.png
-    imageWidth: 324
-    imageHeight: 203
-    buttons: []
+    subtitle: A space for research about architecture, software, and digital fabrication.
+    buttons:
+      - name: Projects
+        url: /projects
+      - name: Posts
+        url: /posts
+      - name: About
+        url: /about/
 
         
 publishDir: "public"
