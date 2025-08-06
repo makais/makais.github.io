@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>2022 on digiplasty</title>
+    <link>http://digiplasty.com/tags/2022/</link>
+    <description>Recent content in 2022 on digiplasty</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <copyright>2025 Makai Smith | digiplasty</copyright>
+    <atom:link href="http://digiplasty.com/tags/2022/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LayoutGAN Prototype</title>
+      <link>http://digiplasty.com/projects/layout-gan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://digiplasty.com/projects/layout-gan/</guid>
+      <description>AI for sketch-based generative design of floor plans</description>
+    </item>
+  </channel>
+</rss>

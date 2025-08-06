@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Sentiment Index | digiplasty</title>
+<meta name="keywords" content="sentiment, data visualization, python, sql, 2020">
+<meta name="description" content="Full-stack development of a Voice of the Customer system">
+<meta name="author" content="">
+<link rel="canonical" href="http://digiplasty.com/projects/sentiment-index/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5e1afebca1500661d8957887ae640c261fa5180e848c9eb845169dfe51378294.css" integrity="sha256-Xhr&#43;vKFQBmHYlXiHrmQMJh&#43;lGA6EjJ64RRad/lE3gpQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://digiplasty.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://digiplasty.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://digiplasty.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://digiplasty.com/apple-touch-icon.png">
+<link rel="mask-icon" href="http://digiplasty.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://digiplasty.com/projects/sentiment-index/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://digiplasty.com/projects/sentiment-index/">
+  <meta property="og:site_name" content="digiplasty">
+  <meta property="og:title" content="Sentiment Index">
+  <meta property="og:description" content="Full-stack development of a Voice of the Customer system">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:tag" content="Sentiment">
+    <meta property="article:tag" content="Data Visualization">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Sql">
+    <meta property="article:tag" content="2020">
+    <meta property="og:image" content="http://digiplasty.com/ces-graph-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://digiplasty.com/ces-graph-cover.jpg">
+<meta name="twitter:title" content="Sentiment Index">
+<meta name="twitter:description" content="Full-stack development of a Voice of the Customer system">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "http://digiplasty.com/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Sentiment Index",
+      "item": "http://digiplasty.com/projects/sentiment-index/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Sentiment Index",
+  "name": "Sentiment Index",
+  "description": "Full-stack development of a Voice of the Customer system",
+  "keywords": [
+    "sentiment", "data visualization", "python", "sql", "2020"
+  ],
+  "articleBody": "“Voice of the Customer” initiative that gathered user sentiment data across multiple interaction points to provide a cross-sectional view of user experience with Bentley products. The program combined input from four sources: executive interviews capturing Net Promoter Scores (NPS) and qualitative feedback; digital surveys offering periodic sentiment trends and open-text analysis; transactional Customer Effort Score (CES) surveys assessing ease of interaction; and G2.com product reviews providing product-level sentiment insights.\nI implemented the system through a series of workflows to automate survey distribution, data retrieval, and sentiment processing.\nOrchestrated by Azure Data Factory pipelines to initiate sending CES surveys, and retrieve and process various sentiment data.\nThe pipelines interacted with Durable Azure Functions in Python through HTTP to initiate and retrieve Qualtrics surveys and to download G2 reviews using REST APIs.\nThe various customer feedback streams were processed with SQL to form a multi-component user sentiment index for use in a Voice-of-the-Customer dashboard in QlikSense.\nThese data streams collectively formed the basis for a multi-component sentiment index displayed in a QlikSense dashboard for product teams to track and act on user sentiment.\nTechniques for generating continuous date ranges, pivoting denormalized data, and computing inline rolling averages are shown in this SQL example. This Python example illustrates an Azure Function that retrieves and flattens Qualtrics survey data for ingestion into the sentiment analytics pipeline.\n",
+  "wordCount" : "222",
+  "inLanguage": "en",
+  "image":"http://digiplasty.com/ces-graph-cover.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://digiplasty.com/projects/sentiment-index/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "digiplasty",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://digiplasty.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://digiplasty.com/" accesskey="h" title="digiplasty (Alt + H)">digiplasty</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://digiplasty.com/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://digiplasty.com/posts" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://digiplasty.com/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://digiplasty.com/">Home</a>&nbsp;»&nbsp;<a href="http://digiplasty.com/projects/">Projects</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Sentiment Index
+    </h1>
+    <div class="post-description">
+      Full-stack development of a Voice of the Customer system
+    </div>
+    <div class="post-meta">
+
+</div>
+  </header> 
+<figure class="entry-cover">
+            <img loading="eager"
+                srcset='http://digiplasty.com/projects/sentiment-index/ces-graph-cover_hu_ff8e55cda809df20.jpg 360w,http://digiplasty.com/projects/sentiment-index/ces-graph-cover_hu_aae25c3deebc7a18.jpg 480w,http://digiplasty.com/projects/sentiment-index/ces-graph-cover_hu_649e5d51fe68e705.jpg 720w,http://digiplasty.com/projects/sentiment-index/ces-graph-cover.jpg 800w'
+                src="http://digiplasty.com/projects/sentiment-index/ces-graph-cover.jpg"
+                sizes="(min-width: 768px) 720px, 100vw"
+                width="800" height="250"
+                alt="a line graph">
+        
+</figure>
+  <div class="post-content"><p>&ldquo;Voice of the Customer&rdquo; initiative that gathered user sentiment data across multiple interaction points to provide a cross-sectional view of user experience with Bentley products. The program combined input from four sources: executive interviews capturing Net Promoter Scores (NPS) and qualitative feedback; digital surveys offering periodic sentiment trends and open-text analysis; transactional Customer Effort Score (CES) surveys assessing ease of interaction; and G2.com product reviews providing product-level sentiment insights.</p>
+<p>I implemented the system through a series of workflows to automate survey distribution, data retrieval, and sentiment processing.</p>
+<ul>
+<li>
+<p>Orchestrated by Azure Data Factory pipelines to initiate sending CES surveys, and retrieve and process various sentiment data.</p>
+</li>
+<li>
+<p>The pipelines interacted with Durable Azure Functions in Python through HTTP to initiate and retrieve Qualtrics surveys and to download G2 reviews using REST APIs.</p>
+</li>
+<li>
+<p>The various customer feedback streams were processed with SQL to form a multi-component user sentiment index for use in a Voice-of-the-Customer dashboard in QlikSense.</p>
+</li>
+</ul>
+<figure>
+    <img loading="lazy" src="sentiment-flowchart.jpg"
+         alt="flowchart image"/> <figcaption>
+            <p>These data streams collectively formed the basis for a multi-component sentiment index displayed in a QlikSense dashboard for product teams to track and act on user sentiment.</p>
+        </figcaption>
+</figure>
+
+<p>Techniques for generating continuous date ranges, pivoting denormalized data, and computing inline rolling averages are shown in this <a href="rolling-ces-avg.sql.txt">SQL example</a>. This <a href="sentiment-qualtrics-dl-activity.py.txt">Python example</a> illustrates an Azure Function that retrieves and flattens Qualtrics survey data for ingestion into the sentiment analytics pipeline.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://digiplasty.com/tags/sentiment/">Sentiment</a></li>
+      <li><a href="http://digiplasty.com/tags/data-visualization/">Data Visualization</a></li>
+      <li><a href="http://digiplasty.com/tags/python/">Python</a></li>
+      <li><a href="http://digiplasty.com/tags/sql/">Sql</a></li>
+      <li><a href="http://digiplasty.com/tags/2020/">2020</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© 2025 Makai Smith | digiplasty</span> · 
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

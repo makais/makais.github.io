@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Construction on digiplasty</title>
+    <link>http://digiplasty.com/tags/construction/</link>
+    <description>Recent content in Construction on digiplasty</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <copyright>2025 Makai Smith | digiplasty</copyright>
+    <lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://digiplasty.com/tags/construction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Verticalization in construction tech</title>
+      <link>http://digiplasty.com/posts/boring-industries/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://digiplasty.com/posts/boring-industries/</guid>
+      <description>&lt;p&gt;Spoke recently with a VC backing a battery-electric construction equipment startup that’s quietly acquiring firms in “boring” operational niches like site prep to control deployment and usage. It eliminates the friction of getting novel equipment into the field while capturing margin. Rather than waiting for contractors to spec unfamiliar hardware, they’re buying the contractors.&lt;/p&gt;
+&lt;p&gt;This is a familiar play.  Joby Aviation is building electric aircraft for their own airline. Waymo built a tightly controlled fleet operation to deliver mobility-as-a-service. Deploying autonomous, electric equipment isn’t just about selling, its about guaranteeing outcomes which often requires owning the stack initially.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
