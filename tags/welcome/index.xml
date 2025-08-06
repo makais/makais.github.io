@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Welcome on digiplasty</title>
-    <link>http://digiplasty.com/tags/welcome/</link>
+    <link>https://digiplasty.com/tags/welcome/</link>
     <description>Recent content in Welcome on digiplasty</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <copyright>2025 Makai Smith | digiplasty</copyright>
     <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://digiplasty.com/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://digiplasty.com/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to digiplasty</title>
-      <link>http://digiplasty.com/posts/welcome-to-digiplasty/</link>
+      <link>https://digiplasty.com/posts/welcome-to-digiplasty/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/posts/welcome-to-digiplasty/</guid>
+      <guid>https://digiplasty.com/posts/welcome-to-digiplasty/</guid>
       <description>&lt;p&gt;Hello there!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;digiplasty&lt;/strong&gt; is a collection some of my professional and academic &lt;a href=&#34;http://digiplasty.com/projects/&#34;&gt;projects&lt;/a&gt; and a place for research &lt;a href=&#34;http://digiplasty.com/posts&#34;&gt;posts&lt;/a&gt;.  It&amp;rsquo;s primarily about architecture, digital fabrication, computer graphics, AI, and software product management.&lt;/p&gt;
-&lt;p&gt;The word &amp;ldquo;digiplasty&amp;rdquo; originated from a digital sculpture collaboration, documented &lt;a href=&#34;http://digiplasty.com/projects/digiplasty-collab/&#34;&gt;here&lt;/a&gt;.  It captured a sense of digital materiality that, along with this domain name, has endured.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;digiplasty&lt;/strong&gt; is a collection some of my professional and academic &lt;a href=&#34;https://digiplasty.com/projects/&#34;&gt;projects&lt;/a&gt; and a place for research &lt;a href=&#34;https://digiplasty.com/posts&#34;&gt;posts&lt;/a&gt;.  It&amp;rsquo;s primarily about architecture, digital fabrication, computer graphics, AI, and software product management.&lt;/p&gt;
+&lt;p&gt;The word &amp;ldquo;digiplasty&amp;rdquo; originated from a digital sculpture collaboration, documented &lt;a href=&#34;https://digiplasty.com/projects/digiplasty-collab/&#34;&gt;here&lt;/a&gt;.  It captured a sense of digital materiality that, along with this domain name, has endured.&lt;/p&gt;
 &lt;p&gt;I also hope digiplasty becomes a catalyst for future collaborations.&lt;/p&gt;
 &lt;p&gt;If you would like to get in touch, find me on &lt;a href=&#34;https://www.linkedin.com/in/makai-smith/&#34;&gt;LinkedIn&lt;/a&gt;, or email me: contact [at] digiplasty [dot] com.&lt;/p&gt;</description>
     </item>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on digiplasty</title>
-    <link>http://digiplasty.com/projects/</link>
+    <link>https://digiplasty.com/projects/</link>
     <description>Recent content in Projects on digiplasty</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <copyright>2025 Makai Smith | digiplasty</copyright>
-    <atom:link href="http://digiplasty.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://digiplasty.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concetto - Generative Design Application</title>
-      <link>http://digiplasty.com/projects/concetto/</link>
+      <link>https://digiplasty.com/projects/concetto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/concetto/</guid>
+      <guid>https://digiplasty.com/projects/concetto/</guid>
       <description>3D generative modeling beta</description>
     </item>
     <item>
       <title>Constructing the &#39;Big Blue Bear&#39;</title>
-      <link>http://digiplasty.com/projects/blue-bear-fabrication/</link>
+      <link>https://digiplasty.com/projects/blue-bear-fabrication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/blue-bear-fabrication/</guid>
+      <guid>https://digiplasty.com/projects/blue-bear-fabrication/</guid>
       <description>Some remarks about making &amp;#39;I See What You Mean&amp;#39;, large-scale sculpture by Lawrence Argent</description>
     </item>
     <item>
       <title>digiplasty Collaboration</title>
-      <link>http://digiplasty.com/projects/digiplasty-collab/</link>
+      <link>https://digiplasty.com/projects/digiplasty-collab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/digiplasty-collab/</guid>
+      <guid>https://digiplasty.com/projects/digiplasty-collab/</guid>
       <description>&lt;p&gt;The word &amp;ldquo;digiplasty&amp;rdquo; originated from a 2001 collaboration between James Stewart and myself, in which we attempted to establish shared-control digital sculpture creation through a structured online practice between us and other participants.&lt;/p&gt;
 &lt;p&gt;Arising as a collaborative activity called &amp;ldquo;digiplasty&amp;rdquo;, these events embodied direct communication through strictly digital-geometric means, in which invited participants co-created by using latent communication in the mesh model&amp;rsquo;s structure and form.&lt;/p&gt;
 &lt;figure&gt;
@@ -36,30 +36,30 @@
     </item>
     <item>
       <title>LayoutGAN Prototype</title>
-      <link>http://digiplasty.com/projects/layout-gan/</link>
+      <link>https://digiplasty.com/projects/layout-gan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/layout-gan/</guid>
+      <guid>https://digiplasty.com/projects/layout-gan/</guid>
       <description>AI for sketch-based generative design of floor plans</description>
     </item>
     <item>
       <title>MicroStation 3D Modeling Tools</title>
-      <link>http://digiplasty.com/projects/microstation-modeling/</link>
+      <link>https://digiplasty.com/projects/microstation-modeling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/microstation-modeling/</guid>
+      <guid>https://digiplasty.com/projects/microstation-modeling/</guid>
       <description>Design of a new parametric solids modeling system</description>
     </item>
     <item>
       <title>Sandpainter</title>
-      <link>http://digiplasty.com/projects/sand-painter/</link>
+      <link>https://digiplasty.com/projects/sand-painter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/sand-painter/</guid>
+      <guid>https://digiplasty.com/projects/sand-painter/</guid>
       <description>Large-scale sand printer installation</description>
     </item>
     <item>
       <title>Sentiment Index</title>
-      <link>http://digiplasty.com/projects/sentiment-index/</link>
+      <link>https://digiplasty.com/projects/sentiment-index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://digiplasty.com/projects/sentiment-index/</guid>
+      <guid>https://digiplasty.com/projects/sentiment-index/</guid>
       <description>Full-stack development of a Voice of the Customer system</description>
     </item>
   </channel>
