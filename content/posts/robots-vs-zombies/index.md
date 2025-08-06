@@ -28,6 +28,4 @@ After prompting ChatGPT-4o on Robots vs Zombies capturing the shift from _a prio
 
 The fight-club metaphor, while rhetorically satisfying, is also reductive.  It obscures genuine complexity of the problem space and the practical necessity of hybrids.  Contrary to a zero-sum fight, a useful metaphor proposed by creative studio Takram is the pendulum: design oscillates between determinism and emergence, between authorship and automation.  For example, somewhere along the frontier between Robot and Zombie we find agent orchestration frameworks such as LangGraph where LLMs call symbolic tools, DAGs govern control flow, and human-LLM interactions loop back through rule-based validation.
 
-Polemically speaking, the contest warrants a formal panel discussion, perhaps staged as a competition with speakers earning points for their team.  Practically speaking, rather than choosing winners, the future lies in finding the strengths of both.
-Polemically, this contest deserves a formal panel: a staged competition where partisans earn points for Team Robot or Team Zombie.
-Practically, there will be no single victor; the real frontier is in harnessing the combined strengths of both.
+Polemically, this contest deserves a formal panel: a staged competition where partisans earn points for Team Robot or Team Zombie. Practically, there will be no single victor; the real frontier is in harnessing the combined strengths of both.
