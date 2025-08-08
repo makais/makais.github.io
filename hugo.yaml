@@ -17,7 +17,7 @@ params:
   ProfileMode:
     enabled: true
     title: " **digiplasty** "
-    subtitle: "<br>Architecture × software × digital fabrication.<br>Writing on [AI & AEC](/posts/).  |  [Projects](/projects).  |  [About](/about)"
+    subtitle: "<br>Architecture × software × digital fabrication.<br>Writing on [AI & AEC](/posts/).  |  [Projects](/projects).  |  [About](/about)."
     imageURL: static/images/digital-fabrication-icon-ef2.png
     imageWidth: 234
     imageHeight: 146
