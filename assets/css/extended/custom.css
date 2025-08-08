@@ -51,3 +51,20 @@
 .profile img {
     border-radius: 0 !important;
 }
+
+/* underline only the inline links in the subtitle block */
+.profile .profile_inner>span a {
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+}
+
+.profile .profile_inner>span a:hover {
+    text-decoration-thickness: 2px;
+}
+
+hr {
+    margin-top: 4rem;
+    /* space above */
+    margin-bottom: 2rem;
+    /* optional space below */
+}

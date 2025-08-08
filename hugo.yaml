@@ -16,11 +16,11 @@ params:
 
   ProfileMode:
     enabled: true
-    title: welcome to **digiplasty**
-    subtitle: A space for research on architecture, software, and digital fabrication.
+    title: " **digiplasty** "
+    subtitle: "<br>Architecture × software × digital fabrication.<br>Writing on [AI & AEC](/posts/).  |  [Projects](/projects).  |  [About](/about)"
     imageURL: static/images/digital-fabrication-icon-ef2.png
-    imageWidth: 324
-    imageHeight: 203
+    imageWidth: 234
+    imageHeight: 146
     buttons: []
 
         
