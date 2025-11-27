@@ -1,4 +1,0 @@
-- Concetto 
-    - Needs more graph images
-    - A city or building
-- 
