@@ -4,23 +4,23 @@
     <title>Digital Fabrication on digiplasty</title>
     <link>https://digiplasty.com/tags/digital-fabrication/</link>
     <description>Recent content in Digital Fabrication on digiplasty</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <copyright>2025 Makai Smith | digiplasty</copyright>
     <atom:link href="https://digiplasty.com/tags/digital-fabrication/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Constructing the &#39;Big Blue Bear&#39;</title>
-      <link>https://digiplasty.com/projects/blue-bear-fabrication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://digiplasty.com/projects/blue-bear-fabrication/</guid>
-      <description>Some remarks about making &amp;#39;I See What You Mean&amp;#39;, large-scale sculpture by Lawrence Argent</description>
-    </item>
     <item>
       <title>Sandpainter</title>
       <link>https://digiplasty.com/projects/sand-painter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://digiplasty.com/projects/sand-painter/</guid>
       <description>Large-scale sand printer installation</description>
+    </item>
+    <item>
+      <title>Constructing the &#39;Big Blue Bear&#39;</title>
+      <link>https://digiplasty.com/projects/blue-bear-fabrication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://digiplasty.com/projects/blue-bear-fabrication/</guid>
+      <description>Some remarks about making &amp;#39;I See What You Mean&amp;#39;, large-scale sculpture by Lawrence Argent</description>
     </item>
   </channel>
 </rss>

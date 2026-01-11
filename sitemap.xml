@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://digiplasty.com/projects/concetto/</loc>
+  </url><url>
+    <loc>https://digiplasty.com/projects/microstation-modeling/</loc>
+  </url><url>
+    <loc>https://digiplasty.com/projects/sand-painter/</loc>
+  </url><url>
+    <loc>https://digiplasty.com/projects/sentiment-index/</loc>
+  </url><url>
+    <loc>https://digiplasty.com/projects/blue-bear-fabrication/</loc>
+  </url><url>
+    <loc>https://digiplasty.com/projects/layout-gan/</loc>
+  </url><url>
+    <loc>https://digiplasty.com/projects/digiplasty-collab/</loc>
+  </url><url>
     <loc>https://digiplasty.com/tags/ai/</loc>
     <lastmod>2025-07-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -86,23 +100,13 @@
   </url><url>
     <loc>https://digiplasty.com/tags/art/</loc>
   </url><url>
-    <loc>https://digiplasty.com/projects/concetto/</loc>
-  </url><url>
-    <loc>https://digiplasty.com/projects/blue-bear-fabrication/</loc>
-  </url><url>
     <loc>https://digiplasty.com/tags/data-visualization/</loc>
-  </url><url>
-    <loc>https://digiplasty.com/projects/digiplasty-collab/</loc>
   </url><url>
     <loc>https://digiplasty.com/tags/digital-fabrication/</loc>
   </url><url>
     <loc>https://digiplasty.com/tags/generative-design/</loc>
   </url><url>
     <loc>https://digiplasty.com/tags/human-in-loop/</loc>
-  </url><url>
-    <loc>https://digiplasty.com/projects/layout-gan/</loc>
-  </url><url>
-    <loc>https://digiplasty.com/projects/microstation-modeling/</loc>
   </url><url>
     <loc>https://digiplasty.com/categories/project/</loc>
   </url><url>
@@ -112,15 +116,11 @@
   </url><url>
     <loc>https://digiplasty.com/tags/python/</loc>
   </url><url>
-    <loc>https://digiplasty.com/projects/sand-painter/</loc>
-  </url><url>
     <loc>https://digiplasty.com/tags/sculpture/</loc>
   </url><url>
     <loc>https://digiplasty.com/search/</loc>
   </url><url>
     <loc>https://digiplasty.com/tags/sentiment/</loc>
-  </url><url>
-    <loc>https://digiplasty.com/projects/sentiment-index/</loc>
   </url><url>
     <loc>https://digiplasty.com/tags/siggraph/</loc>
   </url><url>
