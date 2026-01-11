@@ -2,6 +2,7 @@
 title: "Concetto - Generative Design Application"
 description: "3D generative modeling beta"
 categories: ["project"]
+weight: 80
 tags: ["generative design", "parametric modeling", "design tools", "product management", "2024"]
 
 cover:

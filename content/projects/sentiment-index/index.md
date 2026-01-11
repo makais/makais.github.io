@@ -2,6 +2,7 @@
 title: Sentiment Index 
 description: Full-stack development of a Voice of the Customer system
 categpries: ["project"]
+weight: 100
 tags: ["sentiment", "data visualization", "python", "sql", "2020"]
 cover:
     image: "ces-graph-cover.jpg"

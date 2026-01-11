@@ -2,6 +2,7 @@
 title: "Constructing the 'Big Blue Bear'"
 description: "Some remarks about making 'I See What You Mean', large-scale sculpture by Lawrence Argent"
 categories: ["project"]
+weight: 110
 tags: ["digital fabrication", "sculpture", "2005"]
 cover:
     image: "blue-bear-cover.jpg"

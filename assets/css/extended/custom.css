@@ -62,9 +62,12 @@
     text-decoration-thickness: 2px;
 }
 
-hr {
-    margin-top: 4rem;
-    /* space above */
-    margin-bottom: 2rem;
-    /* optional space below */
+/* Make header image caption match body caption color and alignment */
+
+.entry-cover figcaption {
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
 }
+

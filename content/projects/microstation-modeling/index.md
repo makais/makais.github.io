@@ -2,6 +2,7 @@
 title: "MicroStation 3D Modeling Tools"
 description: "Design of a new parametric solids modeling system"
 categories: ["project"]
+weight: 85
 tags: ["parametric modeling", "design tools", "product management", "2012"]
 cover:
     image: parametric-bridge-sections-cover.jpg
@@ -9,7 +10,7 @@ cover:
     relative: true
 ---
 
-A comprehensive set of Parasolid-based 3D solid modeling tools was created, leveraging D-Cubed 2D and 3D solvers.  I oversaw the modeling system's design, development, and testing, as well running go-to-market with beta user community, creating content, and supporting user events.
+A comprehensive set of Parasolid-based 3D solid modeling tools was created for Bentley's flagship platform, leveraging D-Cubed 2D and 3D solvers.  I oversaw the modeling system's design, development, and testing, as well running go-to-market with beta user community, creating content, and supporting user events.
 
 - Dimension-driven constraints for 2D sketches and 3D assemblies
 - Works on all elements in the design file

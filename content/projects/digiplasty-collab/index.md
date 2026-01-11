@@ -2,6 +2,7 @@
 title: "digiplasty Collaboration"
 descripition: "Shared-control digital sculpture project"
 categories: ["project"]
+weight: 1000
 tags: ["sculpture", "2001"]
 cover:
     image: digiplasty-phomp-cover.jpg

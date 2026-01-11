@@ -2,6 +2,7 @@
 title: "LayoutGAN Prototype"
 description: "AI for sketch-based generative design of floor plans"
 categories: ["project"]
+weight: 120
 tags: ["generative design", "AI", "prototype", "human-in-loop", "product management", "2022"]
 cover:
     image: "layout-gan-cover.jpg"
