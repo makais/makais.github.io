@@ -10,7 +10,7 @@ cover:
     caption: Sand Painter being run at SIGGRAPH 2004 by Dan Collins, left, and Makai Smith, right.
 ---
 
-Sand Painter was a large-scale installation exhibited at SIGGRAPH 2004, which created algorithmic patterns by depositing white silica sand onto a black surface. The project combined a custom-fabricated motion platform, custom deposition system, and software tooling to explore ephemeral image-driven patterning at architectural scale. With a print area of approximately 12' × 18', the installation created ephemeral room-sized drawings.
+Sand Painter was a large-scale installation exhibited at SIGGRAPH 2004, which created algorithmic patterns by depositing white silica sand onto a black surface approx. 12' x 18'. The project combined a custom-fabricated motion platform, custom deposition system, and software tooling to explore ephemeral image-driven patterning at architectural scale. 
 
 I developed the computational interface that converted images into machine control instructions, translating digital data into physical sand patterns. This project represents an early exploration in my work combining digital representation, fabrication systems, and design tooling.
 

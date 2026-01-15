@@ -10,6 +10,7 @@ params:
   defaultTheme: dark
   disableThemeToggle: true
   disableAnchoredHeadings: true
+  hidemeta: true
 
   ShowBreadCrumbs: true
   cover.hiddenInSingle: false

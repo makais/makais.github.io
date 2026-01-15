@@ -72,6 +72,8 @@ GitHub Pages is configured to serve from the root of `gh-pages`.
 
 If using a custom domain, ensure `public/CNAME` contains: "digiplasty.com" file
 
+As a free user, note that the site source resides in a public repo.
+
 To Check Live Site
 GitHub Pages URL: `https://<username>.github.io/<reponame>/` (if project page)
 Or: `https://digiplasty.com` if custom domain and DNS is set
