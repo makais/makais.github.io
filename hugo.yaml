@@ -65,3 +65,7 @@ relativeURLs: false
 services:
   googleAnalytics:
     ID: G-8JPWREVJ7E
+
+privacy:
+  googleAnalytics:
+    respectDoNotTrack: false
