@@ -2,11 +2,10 @@ baseURL: "https://digiplasty.com/"
 languageCode: "en-us"
 title: "digiplasty"
 theme: "PaperMod"
-copyright: © 2025 Makai Smith | digiplasty
+copyright: © 2026 Makai Smith | digiplasty
 
 params:
   env: "production"
-  disableGoogleAnalytics: true
   defaultTheme: dark
   disableThemeToggle: true
   disableAnchoredHeadings: true
@@ -62,3 +61,7 @@ menu:
 
 canonifyURLs: true
 relativeURLs: false
+
+services:
+  googleAnalytics:
+    ID: G-8JPWREVJ7E
