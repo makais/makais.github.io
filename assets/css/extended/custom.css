@@ -55,3 +55,27 @@
     text-align: left;
 }
 
+
+
+figure {
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+figure img {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+}
+
+figcaption {
+    font-size: 0.8em;
+    text-align: center !important;
+    font-weight: normal !important;
+}
+
+figcaption strong {
+    font-weight: bold !important;
+}

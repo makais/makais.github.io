@@ -19,4 +19,12 @@ I collaborate with individuals and teams advancing the design, construction, and
 <hr>
 </div>
 
-{{<figure align=center src="makai-headshot-ef.jpg" alt="Portrait of Makai Smith" title="Makai Smith, M.Arch, MBA" caption="[LinkedIn](https://www.linkedin.com/in/makai-smith/) | [Email](mailto:contact@digiplasty.com?subject=Contact) | [Resume](makai-smith-resume.pdf)" width=200 >}}
+<figure>
+  <img src="makai-headshot-ef.jpg" alt="Portrait of Makai Smith" width="200">
+  <figcaption>
+    <strong>Makai Smith, M.Arch, MBA</strong><br>
+    <a href="https://www.linkedin.com/in/makai-smith/">LinkedIn</a> | 
+    <a href="mailto:contact@digiplasty.com?subject=Contact">Email</a> | 
+    <a href="makai-smith-resume.pdf">Resume</a>
+  </figcaption>
+</figure>
