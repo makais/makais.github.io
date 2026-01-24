@@ -1,6 +1,6 @@
 # Digiplasty Site – Hugo + GitHub Pages Deployment
 
-This repo uses a **two-branch workflow** for maintaining the Hugo source and deploying the compiled site via GitHub Pages.
+This repo uses a **two-branch workflow** for maintaining the Hugo source and deploying the compiled site via GitHub Pages. The PaperMod theme is managed as a **Git submodule**.
 
 ---
 
@@ -17,10 +17,23 @@ This project uses a **Git worktree** to connect the `public/` directory with the
 
 ---
 
-## Initial Setup (already done)
+## Initial Setup
+
+### First-Time Clone
 
 ```bash
-# Create and push empty gh-pages branch (one-time)
+# Clone repo with submodules included
+git clone --recurse-submodules https://github.com/makais/makais.github.io.git
+cd makais.github.io
+
+# If already cloned without submodules, initialize them
+git submodule update --init --recursive
+```
+
+### Worktree Setup (one-time)
+
+```bash
+# Create and push empty gh-pages branch
 git branch gh-pages
 git push -u origin gh-pages
 git branch -d gh-pages
@@ -32,29 +45,54 @@ git worktree add -B gh-pages public origin/gh-pages
 
 ---
 
+## Theme Customizations
+
+This site uses the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme with the following customizations:
+
+**Layout Overrides** (`/layouts/partials/`)
+- **head.html** - Custom SEO meta tags, CSS bundling, search integration
+- **footer.html** - Scroll-to-top button, code copy functionality, theme toggle
+- **single.html** - Custom post layout with breadcrumbs, TOC, and metadata display
+
+**Custom Shortcodes** (`/layouts/shortcodes/`)
+- **center.html** - Centers content blocks: `{{< center >}}content{{< /center >}}`
+
+**Styling** (`/assets/css/extended/custom.css`)
+- Everforest-inspired dark color scheme
+- Custom profile image styling (no border-radius)
+- Figure/image centering with `!important` overrides
+- Custom spacing for horizontal rules and captions
+
+**Configuration** (`hugo.yaml`)
+- Forced dark theme (no toggle)
+- Profile mode enabled with custom branding
+- Google Analytics via Hugo's standard `services.googleAnalytics`
+- Custom menu structure (Projects, Posts, About)
+
+---
+
 ## Regular Workflow
 
-1. Edit the site (on `main`)
+### 1. Edit the Site (on `main`)
 Make any changes to:
-`content/`
-`layouts/`
-`themes/`
-`config` files, etc.
+- `content/`
+- `layouts/`
+- `config` files, etc.
 
-2. Commit source changes
+### 2. Commit Source Changes
 ```bash
 git add .
 git commit -m "Update source content"
 git push origin main
 ```
 
-3. Build the site
+### 3. Build the Site
 ```bash
 hugo
 ```
 This regenerates the static site into the `public/` directory (which is the checked-out gh-pages branch).
 
-4. Deploy the site
+### 4. Deploy the Site
 ```bash
 cd public
 git add .
@@ -63,18 +101,48 @@ git push origin gh-pages
 cd ..
 ```
 
-### Notes
-`public/` is a Git worktree linked to the `gh-pages` branch and must not be committed to `main`.
+---
 
-`.gitignore` includes `public/` to enforce separation.
+## Theme Submodule Management
 
-GitHub Pages is configured to serve from the root of `gh-pages`.
+The PaperMod theme is managed as a Git submodule at `themes/PaperMod/`.
 
-If using a custom domain, ensure `public/CNAME` contains: "digiplasty.com" file
+### Check Submodule Status
+```bash
+# View current submodule commit
+git submodule status
 
-As a free user, note that the site source resides in a public repo.
+# Check for updates available from theme repo
+cd themes/PaperMod
+git fetch
+git log HEAD..origin/master --oneline
+cd ../..
+```
 
-To Check Live Site
-GitHub Pages URL: `https://<username>.github.io/<reponame>/` (if project page)
-Or: `https://digiplasty.com` if custom domain and DNS is set
-Run: `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.9:1313`
+### Update Theme to Latest Version
+```bash
+# Update submodule to latest commit
+git submodule update --remote themes/PaperMod
+
+# Commit the submodule update
+git add themes/PaperMod
+git commit -m "Update PaperMod theme to latest version"
+git push origin main
+```
+
+**Important:** When updating the PaperMod theme, review the 3 partial overrides in `/layouts/partials/` for potential conflicts. Test locally with `hugo server` before deploying.
+
+---
+
+## Notes
+
+- `public/` is a Git worktree linked to the `gh-pages` branch and must not be committed to `main`
+- `.gitignore` includes `public/` to enforce separation
+- GitHub Pages is configured to serve from the root of `gh-pages`
+- If using a custom domain, ensure `public/CNAME` contains: "digiplasty.com"
+- As a free user, note that the site source resides in a public repo
+
+### Check Live Site
+- GitHub Pages URL: `https://<username>.github.io/<reponame>/` (if project page)
+- Custom domain: `https://digiplasty.com` (if DNS is configured)
+- Local testing: `hugo server --bind 0.0.0.0 --baseURL http://192.168.1.9:1313`
